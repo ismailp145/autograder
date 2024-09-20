@@ -2,10 +2,6 @@ import os
 import sys
 import importlib
 
-# q = importlib.import_module("192318-945350 - Sidra Quadri - Sep 11, 2024 1204 AM - Quadri_Sidra_assignment1")
-# q.calculate_boost_distance(40, 9)
-
-
 
 def main():
 
@@ -14,16 +10,15 @@ def main():
     count = 0
     for filename in os.listdir(submissions_dir):
 
-        # here filename is a string so unfortunately we can't just use "import filename"
-        # this is why we need the 'importlib' from above
-        
 
+        # this is why we need the 'importlib' from above
 
         if filename.endswith('.py'):
         
             try:
-                current_student = importlib.import_module(filename[:-3]) 
                 print(filename)
+                current_student = importlib.import_module(filename[:-3]) 
+                # print(filename)
                 count +=1 
               
                 # if hasattr(current_student, 'calculate_boost_distance'):
