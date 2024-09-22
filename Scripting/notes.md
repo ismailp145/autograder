@@ -8,6 +8,14 @@ current issues 9/19/2024:
   Record input and store (maybe csv)
   Work with data after that is complete.
 
-For the testers: 
-    Record count, record which were correct and record any errors that were seen. 
-    
+# For the testers:
+
+Record count, record which were correct and record any errors that were seen.
+
+9/21
+
+# Unit Testers
+
+Include unit testers to check each method instead of trying to add them all to a csv file.
+So if all unit tests pass, then just write PASS / 100.
+If some fail give score for ex, 4/5 Passed. Test Case : Empty list did not pass.
